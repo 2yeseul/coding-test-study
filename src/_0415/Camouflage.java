@@ -10,9 +10,9 @@ public class Camouflage {
         HashMap<String, Integer> typeAndNumber = new HashMap<>();
 
         for(String[] str : clothes) {
-            if(typeAndNumber.containsKey(str[1])) {
+            if(typeAndNumber.containsKey(str[1]))
                 typeAndNumber.replace(str[1], typeAndNumber.get(str[1]) + 1);
-            }
+
             else
                 typeAndNumber.put(str[1], 1);
         }
